@@ -60,6 +60,7 @@ class ChangeProfileScreen extends Component {
                 />
 
             <ScrollView>
+
                 <View style={styles.titleView}>
                     <Text style={styles.titleText}>
                         Ändern Sie Ihre Profildaten
@@ -230,6 +231,7 @@ class ChangeProfileScreen extends Component {
             ident: "Profile"
         })
     }
+
 
     _onActionSelected(position) {
         switch (position) {
@@ -438,7 +440,11 @@ const styles = StyleSheet.create({
     },
     toolbarView: {
         height: 50,
+<<<<<<< HEAD
         marginRight: 200
+=======
+        marginRight: 250
+>>>>>>> ChangeScreen mit NavigatorIcons (FUNKTIONIERT!!!!!)
     }
 });
 
