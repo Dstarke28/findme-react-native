@@ -18,10 +18,6 @@ class ChangeProfileScreen extends Component {
         super(props);
         instance = this;
     }
-    constructor(props) {
-        super(props);
-        instance = this;
-    }
 
     state = {
 
@@ -234,7 +230,6 @@ class ChangeProfileScreen extends Component {
             ident: "Profile"
         })
     }
-
 
     _onActionSelected(position) {
         switch (position) {

@@ -23,6 +23,7 @@ import Icon from '../node_modules/react-native-vector-icons/FontAwesome';
 import User from './../components/backend/User'
 import Database from "./../components/backend/Database"
 
+
 var instance;
 var data = [];
 var ds = new ListView.DataSource({
@@ -153,9 +154,18 @@ class ProfileScreen extends Component {
 
                 </ScrollView>
             </ViewContainer>
-
         );
     }
+                <Icon.ToolbarAndroid
+                    style={styles.toolbarView}
+                    actions={[
+                        {title: 'Back', iconName:'arrow-left', iconSize: 30,  show: 'always'},
+                        {title: 'ChangeProfile', iconName:'edit', iconSize: 30,  show: 'always'},
+                        {title: 'Home', iconName:'home', iconSize: 30,  show: 'always'},
+                        {title: 'Logout', iconName:'sign-out', iconSize: 30,  show: 'always'}
+                    ]}
+                    onActionSelected={this._onActionSelected}
+                />
 
     renderRow(rowData) {
         return (
