@@ -11,7 +11,6 @@ import Database from './../components/backend/Database'
 import User from './../components/backend/User'
 
 var instance;
-
 class ChangeProfileScreen extends Component {
 
     constructor(props) {
@@ -60,7 +59,6 @@ class ChangeProfileScreen extends Component {
                 />
 
             <ScrollView>
-
                 <View style={styles.titleView}>
                     <Text style={styles.titleText}>
                         Ändern Sie Ihre Profildaten
@@ -440,11 +438,7 @@ const styles = StyleSheet.create({
     },
     toolbarView: {
         height: 50,
-<<<<<<< HEAD
         marginRight: 200
-=======
-        marginRight: 250
->>>>>>> ChangeScreen mit NavigatorIcons (FUNKTIONIERT!!!!!)
     }
 });
 
